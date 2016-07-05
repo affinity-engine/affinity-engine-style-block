@@ -1,0 +1,52 @@
+$ae-block-left: 15%;
+$ae-block-right: 15%;
+$ae-block-bottom: 10%;
+
+// menu
+$ae-menu-block-width: 62% !default;
+$ae-menu-block-top: 20% !default;
+$ae-menu-block-right: (100 - $ae-menu-block-width) / 2 !default;
+$ae-menu-block-left: (100 - $ae-menu-block-width) / 2 !default;
+$ae-menu-block-padding: $ae-menu-padding !default;
+$ae-menu-block-border-width: $ae-menu-border-width !default;
+$ae-menu-block-border-radius: $ae-default-border-radius !default;
+
+$ae-menu-header-block-font-size: $ae-menu-header-font-size !default;
+$ae-menu-header-block-margin-bottom: $ae-menu-header-margin-bottom !default;
+$ae-menu-header-block-line-height: $ae-default-line-height !default;
+
+$ae-menu-option-block-font-size: $ae-menu-option-font-size !default;
+$ae-menu-option-block-margin-bottom: $ae-menu-option-margin-bottom !default;
+$ae-menu-option-block-width: $ae-menu-option-width !default;
+$ae-menu-option-block-border-width: $ae-menu-border-width !default;
+$ae-menu-option-block-line-height: $ae-default-line-height !default;
+
+// text
+$ae-text-block-padding-base: $ae-text-padding-base !default;
+$ae-text-block-padding-ends: $ae-text-block-padding-base !default;
+$ae-text-block-padding-sides: $ae-text-block-padding-base !default;
+$ae-text-block-margin: 0 !default;
+$ae-text-block-border-width: $ae-text-border-width !default;
+$ae-text-block-font-size: $ae-text-font-size !default;
+$ae-text-block-left: $ae-block-left !default;
+$ae-text-block-right: $ae-block-right !default;
+$ae-text-block-bottom: $ae-block-bottom !default;
+$ae-text-block-line-height: $ae-default-line-height !default;
+$ae-text-block-height: ($ae-text-block-line-height * 3) +
+                     ($ae-text-block-border-width * 2) +
+                     ($ae-text-block-padding-base * 2) !default;
+$ae-text-block-height-responive-small: $ae-text-block-height + $ae-text-block-line-height !default;
+$ae-text-block-border-radius: $ae-default-border-radius !default;
+$ae-text-block-text-align: $ae-text-text-align !default;
+
+$ae-text-caption-block-font-size: $ae-text-caption-font-size !default;
+$ae-text-caption-block-top: $ae-text-caption-block-font-size * -1.5 !default;
+$ae-text-caption-block-side: $ae-text-block-padding-base !default;
+$ae-text-caption-block-padding-ends: 0 !default
+$ae-text-caption-block-padding-sides: $ae-text-block-padding-base !default;
+$ae-text-caption-block-border-radius: $ae-text-block-border-radius * 0.7 !default;
+
+// text-menu
+
+$ae-text-menu-block-margin-top: $ae-text-block-line-height !default;
+$ae-text-menu-block-width: $ae-menu-block-width !default;
