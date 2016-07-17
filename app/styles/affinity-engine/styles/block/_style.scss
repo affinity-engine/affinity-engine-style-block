@@ -26,9 +26,10 @@
       font-size: $ae-menu-option-block-font-size * map-get($breakpoint_factors, small);
     }
 
-    .ember-columnar-menu-option-button, .ember-columnar-menu-option-input {
+    .ember-columnar-menu-option-type {
       width: $ae-menu-option-block-width;
-      margin-bottom: $ae-menu-option-block-margin-bottom * map-get($breakpoint_factors, small);
+      margin-bottom: $ae-menu-option-block-margin-ends * map-get($breakpoint_factors, small);
+      margin-top: $ae-menu-option-block-margin-ends * map-get($breakpoint_factors, small);
       border-width: $ae-menu-option-block-border-width;
       line-height: $ae-menu-option-block-line-height * map-get($breakpoint_factors, small);
     }
@@ -54,8 +55,9 @@
       font-size: $ae-menu-option-block-font-size;
     }
 
-    .ember-columnar-menu-option-button, .ember-columnar-menu-option-input {
-      margin-bottom: $ae-menu-option-block-margin-bottom;
+    .ember-columnar-menu-option-type {
+      margin-bottom: $ae-menu-option-block-margin-ends;
+      margin-top: $ae-menu-option-block-margin-ends;
       line-height: $ae-menu-option-block-line-height;
     }
   }
