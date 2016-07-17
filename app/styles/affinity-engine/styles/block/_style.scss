@@ -1,141 +1,134 @@
-$ae-menu-included: false !default;
-$ae-text-included: false !default;
+.ae-menu.ae-block {
+  max-height: 100%;
+  border-width: $ae-menu-block-border-width;
+  border-radius: $ae-menu-block-border-radius;
 
-@if ($ae-menu-included == true) {
+  .ember-columnar-menu-option-button, .ember-columnar-menu-option-input {
+    width: $ae-menu-option-block-width;
+    border-width: $ae-menu-option-block-border-width;
+  }
+}
+
+@media (min-width: map-get($breakpoints, small)) {
   .ae-menu.ae-block {
-    max-height: 100%;
-    border-width: $ae-menu-block-border-width;
-    border-radius: $ae-menu-block-border-radius;
+    top: 0;
+    right: 0;
+    left: 0;
+    padding: $ae-menu-block-padding * map-get($breakpoint_factors, small);
+
+    .ae-menu-header {
+      font-size: $ae-menu-header-block-font-size * map-get($breakpoint_factors, small);
+      margin-bottom: $ae-menu-header-block-margin-bottom * map-get($breakpoint_factors, small);
+      line-height: $ae-menu-header-block-line-height * map-get($breakpoint_factors, small);
+    }
+
+    .ember-columnar-menu-option-button {
+      font-size: $ae-menu-option-block-font-size * map-get($breakpoint_factors, small);
+    }
 
     .ember-columnar-menu-option-button, .ember-columnar-menu-option-input {
       width: $ae-menu-option-block-width;
+      margin-bottom: $ae-menu-option-block-margin-bottom * map-get($breakpoint_factors, small);
       border-width: $ae-menu-option-block-border-width;
+      line-height: $ae-menu-option-block-line-height * map-get($breakpoint_factors, small);
     }
   }
+}
 
-  @media (min-width: map-get($breakpoints, small)) {
-    .ae-menu.ae-block {
-      top: 0;
-      right: 0;
-      left: 0;
-      padding: $ae-menu-block-padding * map-get($breakpoint_factors, small);
+@media (min-width: map-get($breakpoints, medium)) {
+  .ae-menu.ae-block {
+    transform: translateY(-$ae-menu-block-top);
 
-      .ae-menu-header {
-        font-size: $ae-menu-header-block-font-size * map-get($breakpoint_factors, small);
-        margin-bottom: $ae-menu-header-block-margin-bottom * map-get($breakpoint_factors, small);
-        line-height: $ae-menu-header-block-line-height * map-get($breakpoint_factors, small);
-      }
+    top: $ae-menu-block-top;
+    right: $ae-menu-block-right;
+    left: $ae-menu-block-left;
+    padding: $ae-menu-block-padding;
 
-      .ember-columnar-menu-option-button {
-        font-size: $ae-menu-option-block-font-size * map-get($breakpoint_factors, small);
-      }
+    .ae-menu-header {
+      font-size: $ae-menu-header-block-font-size;
+      margin-bottom: $ae-menu-header-block-margin-bottom;
+      line-height: $ae-menu-header-block-line-height;
+    }
 
-      .ember-columnar-menu-option-button, .ember-columnar-menu-option-input {
-        width: $ae-menu-option-block-width;
-        margin-bottom: $ae-menu-option-block-margin-bottom * map-get($breakpoint_factors, small);
-        border-width: $ae-menu-option-block-border-width;
-        line-height: $ae-menu-option-block-line-height * map-get($breakpoint_factors, small);
-      }
+    .ember-columnar-menu-option-button {
+      font-size: $ae-menu-option-block-font-size;
+    }
+
+    .ember-columnar-menu-option-button, .ember-columnar-menu-option-input {
+      margin-bottom: $ae-menu-option-block-margin-bottom;
+      line-height: $ae-menu-option-block-line-height;
     }
   }
+}
 
-  @media (min-width: map-get($breakpoints, medium)) {
-    .ae-menu.ae-block {
-      transform: translateY(-$ae-menu-block-top);
+.ae-text.ae-block {
+  border-radius: $ae-text-block-border-radius;
 
-      top: $ae-menu-block-top;
-      right: $ae-menu-block-right;
-      left: $ae-menu-block-left;
-      padding: $ae-menu-block-padding;
+  .ae-text-caption {
+    position: absolute;
+    border-radius: $ae-text-caption-block-border-radius;
 
-      .ae-menu-header {
-        font-size: $ae-menu-header-block-font-size;
-        margin-bottom: $ae-menu-header-block-margin-bottom;
-        line-height: $ae-menu-header-block-line-height;
+    &.center {
+      left: 50%;
+      transform: translateX(-50%);
+    }
+  }
+}
+
+@media (min-width: map-get($breakpoints, small)) {
+  .ae-text.ae-block {
+    left: $ae-text-block-left * map-get($breakpoint_factors, small);
+    right: $ae-text-block-right * map-get($breakpoint_factors, small);
+    bottom: $ae-text-block-bottom * map-get($breakpoint_factors, small);
+    height: $ae-text-block-height-responive-small * map-get($breakpoint_factors, small);
+    line-height: $ae-text-block-line-height * map-get($breakpoint_factors, small);
+    font-size: $ae-text-block-font-size * map-get($breakpoint_factors, small);
+    padding: $ae-text-block-padding-ends * map-get($breakpoint_factors, small) $ae-text-block-padding-sides * map-get($breakpoint_factors, small);
+    margin: $ae-text-block-margin * map-get($breakpoint_factors, small);
+    border-width: $ae-text-block-border-width * map-get($breakpoint_factors, small);
+    text-align: $ae-text-block-text-align;
+
+    .ae-text-caption {
+      top: $ae-text-caption-block-top * map-get($breakpoint_factors, small);
+      padding: $ae-text-caption-block-padding-ends * map-get($breakpoint_factors, small) $ae-text-caption-block-padding-sides * map-get($breakpoint_factors, small);
+      font-size: $ae-text-caption-block-font-size * map-get($breakpoint_factors, small);
+      border-width: $ae-text-block-border-width * map-get($breakpoint_factors, small);
+
+      &.left {
+        left: $ae-text-caption-block-side * map-get($breakpoint_factors, small);
       }
 
-      .ember-columnar-menu-option-button {
-        font-size: $ae-menu-option-block-font-size;
-      }
-
-      .ember-columnar-menu-option-button, .ember-columnar-menu-option-input {
-        margin-bottom: $ae-menu-option-block-margin-bottom;
-        line-height: $ae-menu-option-block-line-height;
+      &.right {
+        right: $ae-text-caption-block-side * map-get($breakpoint_factors, small);
       }
     }
   }
 }
 
-@if ($ae-text-included == true) {
+@media (min-width: map-get($breakpoints, medium)) {
   .ae-text.ae-block {
-    border-radius: $ae-text-block-border-radius;
+    left: $ae-text-block-left;
+    right: $ae-text-block-right;
+    bottom: $ae-text-block-bottom;
+    height: $ae-text-block-height;
+    line-height: $ae-text-block-line-height;
+    font-size: $ae-text-block-font-size;
+    padding: $ae-text-block-padding-ends $ae-text-block-padding-sides;
+    margin: $ae-text-block-margin;
+    border-width: $ae-text-block-border-width;
 
     .ae-text-caption {
-      position: absolute;
-      border-radius: $ae-text-caption-block-border-radius;
-
-      &.center {
-        left: 50%;
-        transform: translateX(-50%);
-      }
-    }
-  }
-
-  @media (min-width: map-get($breakpoints, small)) {
-    .ae-text.ae-block {
-      left: $ae-text-block-left * map-get($breakpoint_factors, small);
-      right: $ae-text-block-right * map-get($breakpoint_factors, small);
-      bottom: $ae-text-block-bottom * map-get($breakpoint_factors, small);
-      height: $ae-text-block-height-responive-small * map-get($breakpoint_factors, small);
-      line-height: $ae-text-block-line-height * map-get($breakpoint_factors, small);
-      font-size: $ae-text-block-font-size * map-get($breakpoint_factors, small);
-      padding: $ae-text-block-padding-ends * map-get($breakpoint_factors, small) $ae-text-block-padding-sides * map-get($breakpoint_factors, small);
-      margin: $ae-text-block-margin * map-get($breakpoint_factors, small);
-      border-width: $ae-text-block-border-width * map-get($breakpoint_factors, small);
-      text-align: $ae-text-block-text-align;
-
-      .ae-text-caption {
-        top: $ae-text-caption-block-top * map-get($breakpoint_factors, small);
-        padding: $ae-text-caption-block-padding-ends * map-get($breakpoint_factors, small) $ae-text-caption-block-padding-sides * map-get($breakpoint_factors, small);
-        font-size: $ae-text-caption-block-font-size * map-get($breakpoint_factors, small);
-        border-width: $ae-text-block-border-width * map-get($breakpoint_factors, small);
-
-        &.left {
-          left: $ae-text-caption-block-side * map-get($breakpoint_factors, small);
-        }
-
-        &.right {
-          right: $ae-text-caption-block-side * map-get($breakpoint_factors, small);
-        }
-      }
-    }
-  }
-
-  @media (min-width: map-get($breakpoints, medium)) {
-    .ae-text.ae-block {
-      left: $ae-text-block-left;
-      right: $ae-text-block-right;
-      bottom: $ae-text-block-bottom;
-      height: $ae-text-block-height;
-      line-height: $ae-text-block-line-height;
-      font-size: $ae-text-block-font-size;
-      padding: $ae-text-block-padding-ends $ae-text-block-padding-sides;
-      margin: $ae-text-block-margin;
+      top: $ae-text-caption-block-top;
+      padding: $ae-text-caption-block-padding-ends $ae-text-caption-block-padding-sides;
+      font-size: $ae-text-caption-block-font-size;
       border-width: $ae-text-block-border-width;
 
-      .ae-text-caption {
-        top: $ae-text-caption-block-top;
-        padding: $ae-text-caption-block-padding-ends $ae-text-caption-block-padding-sides;
-        font-size: $ae-text-caption-block-font-size;
-        border-width: $ae-text-block-border-width;
+      &.left {
+        left: $ae-text-caption-block-side;
+      }
 
-        &.left {
-          left: $ae-text-caption-block-side;
-        }
-
-        &.right {
-          right: $ae-text-caption-block-side;
-        }
+      &.right {
+        right: $ae-text-caption-block-side;
       }
     }
   }
