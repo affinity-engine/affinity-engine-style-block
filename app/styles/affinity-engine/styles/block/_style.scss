@@ -3,7 +3,7 @@
   border-width: $ae-menu-block-border-width;
   border-radius: $ae-menu-block-border-radius;
 
-  .ember-columnar-menu-option-button, .ember-columnar-menu-option-input {
+  .ember-flex-menu-option-button, .ember-flex-menu-option-input {
     width: $ae-menu-option-block-width;
     border-width: $ae-menu-option-block-border-width;
   }
@@ -22,11 +22,11 @@
       line-height: $ae-menu-header-block-line-height * map-get($breakpoint_factors, small);
     }
 
-    .ember-columnar-menu-option-button {
+    .ember-flex-menu-option-button {
       font-size: $ae-menu-option-block-font-size * map-get($breakpoint_factors, small);
     }
 
-    .ember-columnar-menu-option-type {
+    .ember-flex-menu-option-type {
       width: $ae-menu-option-block-width;
       margin-bottom: $ae-menu-option-block-margin-ends * map-get($breakpoint_factors, small);
       margin-top: $ae-menu-option-block-margin-ends * map-get($breakpoint_factors, small);
@@ -51,11 +51,11 @@
       line-height: $ae-menu-header-block-line-height;
     }
 
-    .ember-columnar-menu-option-button {
+    .ember-flex-menu-option-button {
       font-size: $ae-menu-option-block-font-size;
     }
 
-    .ember-columnar-menu-option-type {
+    .ember-flex-menu-option-type {
       margin-bottom: $ae-menu-option-block-margin-ends;
       margin-top: $ae-menu-option-block-margin-ends;
       line-height: $ae-menu-option-block-line-height;
