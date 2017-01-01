@@ -16,10 +16,10 @@
     left: 0;
     padding: $ae-menu-block-padding * map-get($breakpoint_factors, small);
 
-    .ae-menu-header {
-      font-size: $ae-menu-header-block-font-size * map-get($breakpoint_factors, small);
-      margin-bottom: $ae-menu-header-block-margin-bottom * map-get($breakpoint_factors, small);
-      line-height: $ae-menu-header-block-line-height * map-get($breakpoint_factors, small);
+    .ae-menu-text {
+      font-size: $ae-menu-text-block-font-size * map-get($breakpoint_factors, small);
+      margin-bottom: $ae-menu-text-block-margin-bottom * map-get($breakpoint_factors, small);
+      line-height: $ae-menu-text-block-line-height * map-get($breakpoint_factors, small);
     }
 
     .ember-flex-menu-option-button {
@@ -45,10 +45,10 @@
     left: $ae-menu-block-left;
     padding: $ae-menu-block-padding;
 
-    .ae-menu-header {
-      font-size: $ae-menu-header-block-font-size;
-      margin-bottom: $ae-menu-header-block-margin-bottom;
-      line-height: $ae-menu-header-block-line-height;
+    .ae-menu-text {
+      font-size: $ae-menu-text-block-font-size;
+      margin-bottom: $ae-menu-text-block-margin-bottom;
+      line-height: $ae-menu-text-block-line-height;
     }
 
     .ember-flex-menu-option-button {
