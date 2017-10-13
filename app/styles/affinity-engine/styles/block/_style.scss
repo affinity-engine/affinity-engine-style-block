@@ -7,6 +7,14 @@
     width: $ae-menu-option-block-width;
     border-width: $ae-menu-option-block-border-width;
   }
+
+  .ember-flex-menu-option-input-accept {
+    border-width: $ae-menu-option-block-border-width;
+    border-top-right-radius: $ae-menu-block-border-radius;
+    border-bottom-right-radius: $ae-menu-block-border-radius;
+    padding: 0 $ae-menu-option-input-accept-block-padding-sides;
+    font-size: $ae-menu-option-input-accept-block-font-size;
+  }
 }
 
 @media (min-width: map-get($breakpoints, small)) {
@@ -24,6 +32,10 @@
 
     .ember-flex-menu-option-button {
       font-size: $ae-menu-option-block-font-size * map-get($breakpoint_factors, small);
+    }
+
+    .ember-flex-menu-option-input {
+      padding: $ae-menu-option-input-block-padding * map-get($breakpoint_factors, small);
     }
 
     .ember-flex-menu-option-slider-text {
@@ -62,6 +74,10 @@
 
     .ember-flex-menu-option-button {
       font-size: $ae-menu-option-block-font-size;
+    }
+
+    .ember-flex-menu-option-input {
+      padding: $ae-menu-option-input-block-padding;
     }
 
     .ember-flex-menu-option-slider-text {
