@@ -35,7 +35,8 @@
     }
 
     .ember-flex-menu-option-input {
-      padding: $ae-menu-option-input-block-padding * map-get($breakpoint_factors, small);
+      padding: $ae-menu-option-input-block-padding-ends * map-get($breakpoint_factors, small) $ae-menu-option-input-block-padding-sides * map-get($breakpoint_factors, small);
+      margin-bottom: $ae-menu-option-input-margin-bottom;
     }
 
     .ember-flex-menu-option-slider-text {
@@ -43,8 +44,8 @@
       font-size: $ae-menu-option-slider-block-font-size * map-get($breakpoint_factors, small);
     }
 
-    .noUi-target {
-      margin-bottom: $ae-menu-option-slider-block-margin-bottom * map-get($breakpoint_factors, small);
+    .ember-flex-menu-option-slider {
+      margin: 0 $ae-menu-option-slider-block-margin-sides $ae-menu-option-slider-block-margin-bottom * map-get($breakpoint_factors, small);
     }
 
     .ember-flex-menu-option-type {
@@ -77,15 +78,16 @@
     }
 
     .ember-flex-menu-option-input {
-      padding: $ae-menu-option-input-block-padding;
+      padding: $ae-menu-option-input-block-padding-ends $ae-menu-option-input-block-padding-sides;
+      margin-bottom: $ae-menu-option-input-margin-bottom;
     }
 
     .ember-flex-menu-option-slider-text {
       font-size: $ae-menu-option-slider-block-font-size;
     }
 
-    .noUi-target {
-      margin-bottom: $ae-menu-option-slider-block-margin-bottom;
+    .ember-flex-menu-option-slider {
+      margin: 0 $ae-menu-option-slider-block-margin-sides $ae-menu-option-slider-block-margin-bottom;
     }
 
     .ember-flex-menu-option-type {

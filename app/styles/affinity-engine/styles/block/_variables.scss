@@ -21,12 +21,15 @@ $ae-menu-option-block-width: $ae-menu-option-width !default;
 $ae-menu-option-block-border-width: $ae-menu-border-width !default;
 $ae-menu-option-block-line-height: $ae-default-line-height !default;
 
-$ae-menu-option-input-block-padding: $ae-menu-option-input-padding !default;
+$ae-menu-option-input-block-padding-ends: $ae-menu-option-input-padding !default;
+$ae-menu-option-input-block-padding-sides: $ae-menu-option-input-padding * 3 !default;
+$ae-menu-option-input-margin-bottom: 0 !default;
 $ae-menu-option-input-accept-block-padding-sides: 15px !default;
 $ae-menu-option-input-accept-block-font-size: 175% !default;
 
 $ae-menu-option-slider-block-font-size: $ae-menu-option-block-font-size !default;
 $ae-menu-option-slider-block-font-weight: bold !default;
+$ae-menu-option-slider-block-margin-sides: 20px !default;
 $ae-menu-option-slider-block-margin-bottom: $ae-menu-option-margin-ends * 3 !default;
 
 // text
