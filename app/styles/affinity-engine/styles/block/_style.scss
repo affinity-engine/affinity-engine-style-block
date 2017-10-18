@@ -36,7 +36,7 @@
 
     .ember-flex-menu-option-input {
       padding: $ae-menu-option-input-block-padding-ends * map-get($breakpoint_factors, small) $ae-menu-option-input-block-padding-sides * map-get($breakpoint_factors, small);
-      margin-bottom: $ae-menu-option-input-margin-bottom;
+      margin-bottom: $ae-menu-option-input-block-margin-bottom;
     }
 
     .ember-flex-menu-option-slider-text {
@@ -79,7 +79,7 @@
 
     .ember-flex-menu-option-input {
       padding: $ae-menu-option-input-block-padding-ends $ae-menu-option-input-block-padding-sides;
-      margin-bottom: $ae-menu-option-input-margin-bottom;
+      margin-bottom: $ae-menu-option-input-block-margin-bottom;
     }
 
     .ember-flex-menu-option-slider-text {

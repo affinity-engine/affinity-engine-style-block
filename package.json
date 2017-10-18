@@ -1,6 +1,6 @@
 {
   "name": "affinity-engine-style-block",
-  "version": "0.2.6",
+  "version": "0.2.7",
   "description": "Free-standing blocks -- an Affinity Engine Structural Style",
   "keywords": [
     "ember-addon",
